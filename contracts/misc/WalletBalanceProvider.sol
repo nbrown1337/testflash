@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 import "openzeppelin-solidity/contracts/utils/Address.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
@@ -33,7 +33,7 @@ contract WalletBalanceProvider {
     /**
     @dev Fallback function, don't accept any ETH
     **/
-    function() external payable {
+    fallback () external payable {
         revert("WalletBalanceProvider does not accept payments");
     }
 

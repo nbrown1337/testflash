@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
@@ -636,7 +636,7 @@ contract LendingPoolCore is Ownable {
     /**
     @notice ETH/token transfer functions
      */
-    function() external payable {
+    fallback() external payable {
         //only contracts can send ETH to the core
         require(msg.sender.isContract(), "Only contracts can send ether to the Lending pool core");
 

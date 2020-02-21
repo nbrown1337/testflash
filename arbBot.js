@@ -18,12 +18,14 @@ TRADELIVE = false;                                                        // Cha
 
 BigNumber.set({ DECIMAL_PLACES: 18});
 
-const TRADER_ACCOUNT = '0xeE398666cA860DFb7390b5D73EE927e9Fb41a60A';
+const TRADER_ACCOUNT = '0x43BAD2b427d11d913485B59FC7C4402a800c39a1';
 const DAI_ADDRESS = '0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD';
 
 let id, DaiTokenInstance, UniSwapFactoryInstance, UniSwapExchangeInstance, leaderExchangeAddr, followerExchangeAddr;
 
-const web3 = new Web3(new Web3.providers.HttpProvider(process.env.INFURAKOVAN));
+// const web3 = new Web3(new Web3.providers.HttpProvider(process.env.INFURAKOVAN));
+var net = require('net');
+const web3 = new Web3(new Web3.providers.IpcProvider('/media/blockchain/geth/geth.ipc', net)); // mac os path
 
 async function run(){
   // Main function that will run and check for Arb op
