@@ -29,7 +29,7 @@ module.exports = {
     },
     main: {
       provider: function() {
-        return new HDWalletProvider("EE6740679DE52903A419F7BAD5E4986D80DDC481CB2A0EF94F36A41F4B5D7D5E", "http://127.0.0.1:8545");
+        return new HDWalletProvider("PRIVATE_KEY", "http://127.0.0.1:8545");
       },
       network_id: 1,
       gasPrice: 20000000000, // 20 GWEI
