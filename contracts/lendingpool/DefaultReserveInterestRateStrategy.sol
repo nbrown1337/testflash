@@ -7,8 +7,8 @@ import "./LendingPoolCore.sol";
 import "../interfaces/ILendingRateOracle.sol";
 
 
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
+import "../../node_modules/@openzeppelin/contracts/math/SafeMath.sol";
 
 
 /**

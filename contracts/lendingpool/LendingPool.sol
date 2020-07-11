@@ -1,9 +1,10 @@
 pragma solidity ^0.6.0;
 
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
-import "openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
-import "openzeppelin-solidity/contracts/utils/Address.sol";
-import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
+
+import "../../node_modules/@openzeppelin/contracts/math/SafeMath.sol";
+import "../../node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import "../../node_modules/@openzeppelin/contracts/utils/Address.sol";
+import "../../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 import "../configuration/LendingPoolAddressesProvider.sol";
 import "../configuration/LendingPoolParametersProvider.sol";

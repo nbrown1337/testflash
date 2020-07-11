@@ -1,11 +1,12 @@
 pragma solidity ^0.6.0;
 
-import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "../../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+
 import "../interfaces/IFeeProvider.sol";
 import "../libraries/WadRayMath.sol";
 
 // TODO: move Ownable to governance based ACR
-contract FeeProvider is IFeeProvider, Ownable {
+interface FeeProvider is IFeeProvider, Ownable {
     using WadRayMath for uint256;
 
     uint256 originationFeePercentage;

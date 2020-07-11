@@ -1,7 +1,7 @@
 pragma solidity ^0.6.0;
 
 
-import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "../../node_modules/@openzeppelin/contracts/access/Ownable.sol";
 import "./UintStorage.sol";
 
 /**

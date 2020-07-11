@@ -37,6 +37,11 @@ class App extends Component {
 
   runExample = async () => {
     const { accounts, contract } = this.state;
+    var temp = contract;
+    temp._address = "0xB2a395Ad14F860d3684ec8af11B480dC65E86009";
+    this.setState({contract: temp})
+    console.log(contract._address)
+    // this.setState({contract["_address"] = "0xB2a395Ad14F860d3684ec8af11B480dC65E86009"})
 
     // Stores a given value, 5 by default.
     await contract.methods.set(5).send({ from: accounts[0] });
