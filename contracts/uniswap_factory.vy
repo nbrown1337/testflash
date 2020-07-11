@@ -1,7 +1,7 @@
-contract Exchange():
+interface Exchange():
     def setup(token_addr: address): modifying
 
-NewExchange: event({token: indexed(address), exchange: indexed(address)})
+
 
 exchangeTemplate: public(address)
 tokenCount: public(uint256)
@@ -27,7 +27,7 @@ def createExchange(token: address) -> address:
     token_id: uint256 = self.tokenCount + 1
     self.tokenCount = token_id
     self.id_to_token[token_id] = token
-    log.NewExchange(token, exchange)
+    
     return exchange
 
 @public

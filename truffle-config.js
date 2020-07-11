@@ -7,7 +7,7 @@ module.exports = {
   // to customize your Truffle configuration!
   compilers: {
     solc: {
-      version: "0.6.2", // A version or constraint - Ex. "^0.5.0"
+      version: "^0.6.0", // A version or constraint - Ex. "^0.5.0"
                          // Can also be set to "native" to use a native solc
       docker: false, // Use a version obtained through docker
       parser: "solcjs",  // Leverages solc-js purely for speedy parsing
